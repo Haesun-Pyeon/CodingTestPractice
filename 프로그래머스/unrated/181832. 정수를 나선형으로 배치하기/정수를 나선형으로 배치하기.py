@@ -4,38 +4,29 @@ def solution(n):
     val = 1
     i = n
     j = 0
+    
     while True:
         while y < i:
             answer[x][y] = val
             val += 1
-            if val > n**2 : break
             y += 1
-
         y -= 1
         x += 1
-        if val > n**2 : break
         while x < i:
             answer[x][y] = val
             val += 1
-            if val > n**2 : break
             x += 1
-
         x -= 1
         y -= 1
-        if val > n**2 : break
         while y >= j:
             answer[x][y] = val
             val += 1
-            if val > n**2 : break
             y -= 1
-
         y += 1
         x -= 1
-        if val > n**2 : break
         while x > j:
             answer[x][y] = val
             val += 1
-            if val > n**2 : break
             x -= 1
         x += 1
         y += 1
