@@ -5,8 +5,6 @@ def solution(score):
     sort_avg = list(avg.keys())
     sort_avg.sort(key=lambda x: avg[x], reverse=True)
     
-    print(avg)
-    print(sort_avg)
     answer = [0 for _ in range(len(sort_avg))]
     rank = 0
     acc = 0
@@ -20,5 +18,4 @@ def solution(score):
             acc = 0
             answer[idx] = rank
         prev = idx
-    print(answer)
     return answer
